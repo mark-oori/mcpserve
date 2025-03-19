@@ -1,5 +1,5 @@
 <h1 align="center">
-  🤖 MCPServe by [@ryaneggz](https://github.com/ryaneggz)
+  🤖 MCPServe by @ryaneggz
 </h1>
 
 <p align="center">
