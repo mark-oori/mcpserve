@@ -1,36 +1,24 @@
-FROM ubuntu:24.04
+# Small python 3.11 docker file
+FROM python:3.11-slim
 
-# Install Python 3 and pip
-RUN apt-get update && apt-get install -y \
-    python3 \
-    python3-pip \
-    python3-venv \
-    curl \
-    git \
-    tmux \
-    jq \
-    gh \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+# Set working directory
+WORKDIR /app
 
-# Create and set working directory
-WORKDIR /mcp
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
-# Set env variables
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
-
-# Copy requirements first for better layer caching
+# Install dependencies
 COPY requirements.txt .
-RUN pip3 install --upgrade pip \
-    && pip3 install uv \
-    && uv pip install -v --system --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir uv && \
+    uv pip install --system --no-cache-dir -r requirements.txt
 
 # Copy application code
 COPY . .
 
-# Expose the port the app runs on
+# Expose port
 EXPOSE 8005
 
 # Run the application
-CMD ["python3", "main.py"]
+CMD ["python", "main.py"]
